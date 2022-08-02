@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tertiary Schools Survey</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    
+    <header>
+        <h1 id="title">Tertiary Schools Survey</h1>
+        <p id="description">Building a better Tertiary School setting in Nigeria on your thoughts</p>
+    </header>    
+    <form id="survey-form">
+        
+    <fieldset><label id="name-label" >What is your Name?<input type="text" id="text" placeholder="What is Your Full Name?" required class="details"></label>
+    <label id="email-label">Enter your email address<input type="email" id="email" required placeholder="Eg. name@hostserver.com" class="details"></label>
+    <label id="number-label">Enter Region Number<input type="number" min="001" max="669" title="The Region code cannot be greater than 669 or less than 1" placeholder="Region number" class="details"></label></fieldset>
+        <hr>
+        
+    <fieldset><label> What category of school do you prefer? <select id="dropdown">
+    <option>(Select One)</option>
+    <option>Private Schools</option>
+    <option>Federal Schools</option>
+    <option>State Schools</option>
+    </select>
+    </label><br>
+    <label>What type of Tertiary school do you feel needs more attention?
+        <label for="Polytechnic"><input type="radio" name="school-type" value="Polytechnic" id="Polytechnic">  Polytechnic</label>
+        <label for="University"><input type="radio" name="school-type" value="University" id="University">  University</label>
+        <label for="College"><input type="radio" name="school-type" value="College" id="College">  College</label>
+        <label for="Monotechnic"><input type="radio" name="school-type" value="Monotechnic" id="Monotechnic">  Monotechnic</label>
+    </label>
+        <hr>
+    <label>What do you think Tertiary Schools need most:
+        <label for="Computers"><input type="checkbox" value="computer">  Computer</label>
+        <label for="Wi-Fi"><input type="checkbox" value="Wi-Fi">  Wi-Fi</label>
+        <label for="Buildings"><input type="checkbox" value="Buildings">  Buildings</label>
+        <label for="Donations"><input type="checkbox" value="Donations">  Donations</label>
+    </label>
+        <br>
+    <label>Please leave a feedback
+    <textarea placeholder="I want to also add..." rows="5" cols="55" ></textarea>
+    </label>
+    </fieldset>
+        
+   <input type="submit" value="Submit">
+        
+    </form>
+    
+</body>
+
+</html>
